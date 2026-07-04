@@ -1,0 +1,42 @@
+# Aplicado (org-wide). Canônico: BrazilCo/governance/templates/ISSUE_TEMPLATE/backlog-item.yml (ADR-0048).
+name: Backlog item
+description: Item do Dev Backlog (Kanban-lite · governance ADR-0048)
+title: "[backlog] "
+labels: ["backlog"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vai pro board **BrazilCo — Dev Backlog** (org BrazilCo, Project #2). Metodologia = **Kanban-lite** (ADR-0048).
+        **Nada nasce ad-hoc** — antes de criar repo/serviço/projeto novo, ver o *gate* do ADR-0048.
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Por que este item existe (problema / oportunidade / decisão).
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: Ação / Definition of Done
+      description: "O que fazer + como saber que FECHOU: commits granulares · PR mergeado (validado local) · doc/ADR atualizado · ponteiro/registro no governance."
+    validations:
+      required: true
+  - type: input
+    id: lane
+    attributes:
+      label: Lane (repo / domínio dono)
+      description: 1 CLI opera 1 lane; cross-lane vai por hand-off (Docs-HandOff).
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options: [P0, P1, P2]
+      default: 2
+  - type: textarea
+    id: links
+    attributes:
+      label: Links (ADR / doc / PR / memória relacionada)
