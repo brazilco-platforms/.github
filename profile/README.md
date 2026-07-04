@@ -1,5 +1,7 @@
 # BrazilCo Platforms
 
+![brazilco-platforms](https://img.shields.io/badge/BrazilCo%20Platforms-Plataforma%20%2F%20Engenharia-0D9488?style=for-the-badge)
+
 > The platform engineering division of [BrazilCo](https://github.com/BrazilCo) — building scalable, secure, and production-grade infrastructure for Brazilian and global enterprises.
 
 ---
